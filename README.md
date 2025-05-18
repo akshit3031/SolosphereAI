@@ -1,5 +1,8 @@
 # Intern Assignment: Cross-Platform System Utility + Admin Dashboard
 
+![Alt text](./assets/frontend_image.png)
+
+
 ## 🎯 Objective
 Build a system that includes:
 - A **cross-platform utility** to collect system health data

@@ -44,7 +44,7 @@ export default function MachineList({ machines, selectedMachine, onSelect }) {
           onChange={(e) => setFilterStatus(e.target.value)}
           className="border rounded px-2 py-1"
         >
-          <option value="">All statuses</option>
+          <option value="">All status</option>
           <option value="OK">OK</option>
           <option value="Issues">With Issues</option>
         </select>
