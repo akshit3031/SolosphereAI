@@ -1,4 +1,3 @@
-# Intern Assignment: Cross-Platform System Utility + Admin Dashboard
 
 # 🖥️ Machine Monitoring Dashboard
 
