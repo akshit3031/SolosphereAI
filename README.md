@@ -1,74 +1,57 @@
 # Intern Assignment: Cross-Platform System Utility + Admin Dashboard
 
-![Alt text](./assets/frontend_image.png)
+# 🖥️ Machine Monitoring Dashboard
 
+A web-based dashboard to monitor machine health, including security settings, software status, and system configurations.
 
-## 🎯 Objective
-Build a system that includes:
-- A **cross-platform utility** to collect system health data
-- An **admin dashboard** to centrally view this data
-
-The project is split into **three parts**:
-- The **Utility** is **mandatory**
-- Participants may choose to submit either the **Backend** or the **Frontend** as the second part
+![Machine Monitoring Dashboard](./assets/frontend_image.png)
 
 ---
 
-## 📦 Deliverables
+## 🚀 Features
 
-### 1. ✅ Mandatory – System Utility (Client)
-- Cross-platform installable (macOS / Windows / Linux)
-- Performs the following checks:
-  - Disk encryption status
-  - OS update status (current vs. latest)
-  - Antivirus presence and status
-  - Inactivity sleep settings (should be ≤ 10 minutes)
-- Runs a background daemon that:
-  - Periodically (every 15–60 minutes) checks system state
-  - Reports data **only if there's a change**
-  - Sends updates to a remote API endpoint
-  - Consumes minimal resources
+### 🔍 Machine Overview Panel
+- **Filter by OS** (e.g., Linux)
+- **Filter by Status** (e.g., All status, Issues only)
+- Displays:
+  - Machine ID
+  - OS
+  - Antivirus
+  - Last Check-in Time
+  - Highlighted **Issues**
 
-### 2. 🔁 Optional – Backend Server (API + Storage)
-- Accepts system data from the utility (via secure HTTP)
-- Stores machine ID, timestamps, and check results
-- Provides APIs for:
-  - Listing all machines and their latest status
-  - Filtering based on OS, issues, etc.
-  - **Optional**: CSV export endpoint
+### 📊 Machine History Section
+- Shows a detailed log of the selected machine.
+- Information includes:
+  - Timestamp
+  - OS Version
+  - Disk Encryption Status
+  - OS Update Status
+  - Antivirus Detection
+  - Sleep Timeout Setting
 
-### 3. 🔁 Optional – Admin Dashboard (Frontend)
-- A web UI that:
-  - Lists all reporting machines
-  - Displays latest values from each
-  - Flags any configuration issues (e.g., unencrypted disk, outdated OS)
-  - Shows last check-in time
-  - Provides filters/sorting (e.g., by OS, status)
+### 🛑 Issue Detection
+- Issues such as:
+  - Disk not encrypted
+  - Outdated OS
+  - Incorrect sleep settings
+- Clearly marked with an **"⚠️ Issues"** badge for quick visibility.
 
----
-
-## 📤 Submission Guidelines
-- The **Utility is mandatory** for submission
-- Submit **any one** of the remaining two (**Backend** or **Frontend**) along with the Utility
-- Full credit for submitting all three  
-- Partial evaluation for:
-  - Utility + Backend
-  - Utility + Frontend
+### 🧭 Sorting & Filtering
+- Search and filter historical data by:
+  - OS
+  - Antivirus
+  - Encryption status
+  - Update status
+- Sort options (e.g., newest first)
 
 ---
 
-## 🧪 Evaluation Criteria
-- Accuracy and reliability of system checks
-- Efficiency and robustness of the daemon
-- Functionality of backend API or frontend UI
-- Code quality, security, and documentation
-- Design decisions and implementation clarity
+## 🧩 Technologies Used
+
+- **Frontend**: React.js / HTML / CSS
+- **Backend**: Node.js / Express.js
+- **Utility**: Python scripts for system diagnostics
+- **Database**: MongoDB (Atlas)
 
 ---
-
-## Submission Instructions
-
-* Submit a GitHub/GitLab repository
-* Ensure the project can be set up with standard commands
-
-
