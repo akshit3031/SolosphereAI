@@ -66,7 +66,7 @@ const machineHistory = async(req,res)=>{
 
     const history = await Report.find({ machine_id:machineId }).sort({lastCheckIn:-1});
     console.log(history)
-    res.json(history); // send as JSON response
+    res.json(history); // send as JSON responseo
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: 'Server error fetching history' });
